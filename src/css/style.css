@@ -1,0 +1,179 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 600px;
+  height: 300px;
+}
+
+.chat {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  max-height: 500px;
+  margin: 100px auto 0 auto;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.chat__messages {
+  width: 100%;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.chat__message {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.chat__message:nth-child(n + 2) {
+  margin-top: 15px;
+}
+
+.chat__text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.chat__input {
+  margin-right: 5px;
+  padding-left: 5px;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.chat__input:active, .chat__input:focus {
+  outline: none;
+  border: none;
+}
+
+.error {
+  position: absolute;
+  left: 40%;
+  top: 50px;
+  width: 250px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.error__message {
+  margin-top: 10px;
+}
+
+.input__options {
+  margin: 10px 15px 0 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 4px;
+}
+
+.input__options:hover {
+  border: 3px solid black;
+}
+
+.voice__message, .video__message, .send__media {
+  margin: 0 3px;
+}
+
+.media__btns {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.record__btns {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.timer__record{
+  margin: 0 3px;
+}
+
+.hidden {
+  display: none;
+}
+
+.geo__hidden{
+  display: none;
+}
+
+.longitude, .latitude {
+  margin: 3px 25px;
+}
+
+.msg__item {
+  margin-bottom: 12px;
+  border: 1px solid #5f6368;
+  padding: 2px;
+}
+
+.message__time {
+  font-size: 10px;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.coords {
+  font-size: 10px;
+  margin-top: 6px;
+}
+
+.video {
+  width: 350px;
+}
+
+.modal_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: #ebe5e5;
+  padding: 20px;
+  border: 1px #000;
+  left: 40%;
+  top: 30%;
+}
+
+.modal_msg {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5f6368;
+  line-height: 50px;
+  align-self: center;
+}
+
+.set_btn {
+  background: orange;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
